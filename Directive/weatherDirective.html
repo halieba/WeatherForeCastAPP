@@ -1,0 +1,16 @@
+<!--<div class="panel-group">
+  <div class="panel panel-default">
+      <div class="panel-heading">{{dayTodate(w.dt)|date:"MM/dd/yyyy HH:mm:ss Z"}}</div>
+    <div class="panel-body">{{kelvinToFahreniet(w.temp.day)}}</div>
+  </div>
+{daytempconvertToDate(weatherDay.dt)  }}\
+{{convertToStandard(weatherDay.temp.day)}}
+</div>-->
+
+<div class="panel-group">
+  <div class="panel panel-default">
+      <div class="panel-heading">{{convertToDate({date:weatherDay.dt})|date:dateFormat}}</div>
+    <div class="panel-body">{{convertToStandard({daytemp:weatherDay.temp.day})}}</div>
+  </div>
+
+</div>
